@@ -15,6 +15,7 @@
     <description>Nerzon</description>
     <properties>
         <java.version>19</java.version>
+        <hibernate-version>5.0.1.Final</hibernate-version>
     </properties>
     <dependencies>
         <!--SpringDataJpa-->
@@ -41,6 +42,12 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+        <!--Telegram bot spring boot starter -->
+        <dependency>
+            <groupId>org.telegram</groupId>
+            <artifactId>telegrambots-spring-boot-starter</artifactId>
+            <version>6.1.0</version>
+        </dependency>
         <!--SpringBoot-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,8 +60,20 @@
             <artifactId>telegrambots</artifactId>
             <version>6.1.0</version>
         </dependency>
-    </dependencies>
+            <!-- Hibernate -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-core</artifactId>
+                <version>${hibernate-version}</version>
+            </dependency>
 
+            <!-- for JPA, use hibernate-entitymanager instead of hibernate-core -->
+            <dependency>
+                <groupId>org.hibernate</groupId>
+                <artifactId>hibernate-entitymanager</artifactId>
+                <version>${hibernate-version}</version>
+            </dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>

@@ -26,7 +26,7 @@ public class UpdateController extends TeleBot{
                     try {
                         execute(SendMessage.builder()
                                 .chatId(message.getChatId())
-                                .text("Заглушка")
+                                .text("sosi")
                                 .build());
                     } catch (TelegramApiException e) {
                         throw new RuntimeException(e);
