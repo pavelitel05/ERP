@@ -19,7 +19,7 @@ public class TeleBot extends TelegramLongPollingBot {
 
     @Override
     public String getBotToken() {
-        return "5733170568:AAGtjKtzXLQtb-Yl4FNldGnCBknrBxNCCmU";
+        return "###";
     }
 
     @Override
